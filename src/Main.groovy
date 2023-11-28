@@ -16,7 +16,6 @@ static void main(String[] args) {
     personnel.ajouterEmploye(producteurRisque)
     personnel.ajouterEmploye(manutentionnaireRisk)
     personnel.each { println(it.afficheSalaire()) };
-    //myEmployees.getAverageSalary();
 
 
 }
