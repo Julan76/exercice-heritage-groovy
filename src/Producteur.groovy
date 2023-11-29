@@ -1,5 +1,5 @@
-class Producteur extends Employe{
-    public static final int TAUX_FIXE_PRODUCTEUR = 5
+class Producteur extends Employe {
+
     int nbUnitProduits
 
     Producteur(String nom, String prenom, int age, String dateEntree, int nbUnitProduits) {
@@ -9,6 +9,7 @@ class Producteur extends Employe{
 
     @Override
     int calculerSalaire() {
-        return nbUnitProduits* TAUX_FIXE_PRODUCTEUR
+        return nbUnitProduits * Constant.TAUX_FIXE_PRODUCTEUR
+        //return nbUnitProduits * TAUX_FIXE_PRODUCTEUR
     }
 }

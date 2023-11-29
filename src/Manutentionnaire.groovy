@@ -1,5 +1,5 @@
 class Manutentionnaire extends Employe{
-    public static final int TAUX_FIXE_MANUTENTIONNAIRE = 65
+
     int nbHeures
 
     Manutentionnaire(String nom, String prenom, int age, String dateEntree, int nbHeures) {
@@ -9,6 +9,6 @@ class Manutentionnaire extends Employe{
 
     @Override
     int calculerSalaire() {
-        return nbHeures* TAUX_FIXE_MANUTENTIONNAIRE
+        return nbHeures* Constant.TAUX_FIXE_MANUTENTIONNAIRE
     }
 }

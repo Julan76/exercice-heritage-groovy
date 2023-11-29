@@ -1,7 +1,4 @@
-class ManutentionnaireRisk extends Manutentionnaire{
-
-
-    public static final int PRIME_MANUTENTIONNAIRE_RISK = 200
+class ManutentionnaireRisk extends Manutentionnaire {
 
     ManutentionnaireRisk(String nom, String prenom, int age, String dateEntree, int nbHeures) {
         super(nom, prenom, age, dateEntree, nbHeures)
@@ -9,6 +6,7 @@ class ManutentionnaireRisk extends Manutentionnaire{
 
     @Override
     int calculerSalaire() {
-        return super.calculerSalaire()+ PRIME_MANUTENTIONNAIRE_RISK
+        return super.calculerSalaire()+ Constant.PRIME_MANUTENTIONNAIRE_RISK
+        //return super.calculerSalaire()+ PRIME_MANUTENTIONNAIRE_RISK
     }
 }

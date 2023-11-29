@@ -7,15 +7,17 @@ static void main(String[] args) {
     def producteurRisque = new ProducteurRisque("Sylvain", "Mo", 28, "2000", 1000); //1000 : nb unité //produites
     def manutentionnaireRisk = new ManutentionnaireRisk("Thierno", "Ca", 30, "2001", 45); // nb heures
 
-
-     def personnel = new Personnel();
-  personnel.ajouterEmploye(vendeur)
+    def personnel = new Personnel();
+    personnel.ajouterEmploye(vendeur)
     personnel.ajouterEmploye(representant)
     personnel.ajouterEmploye(producteur)
     personnel.ajouterEmploye(manutentionnaire)
     personnel.ajouterEmploye(producteurRisque)
     personnel.ajouterEmploye(manutentionnaireRisk)
-    personnel.each { println(it.afficheSalaire()) };
+    //personnel.afficheSalaire()
+    println( personnel.afficheSalaire())
+    println("Somme salaire : " + "" + personnel.moyenSalaire)
+
 
 
 }
