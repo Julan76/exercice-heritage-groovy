@@ -17,6 +17,10 @@ class Personnel {
             println("le nom :"+it.getNom())
             println("le salaire :"+it.calculerSalaire())
 
+            def calculerSalaireMoyen(employes) {
+                def salaires = employes.collect { it.calculerSalaire() }
+                return salaires.sum() / salaires.size()
+
         }
 
     }

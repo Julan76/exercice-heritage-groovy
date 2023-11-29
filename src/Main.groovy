@@ -9,7 +9,7 @@ static void main(String[] args) {
 
 
      def personnel = new Personnel();
-  personnel.ajouterEmploye(vendeur)
+    personnel.ajouterEmploye(vendeur)
     personnel.ajouterEmploye(representant)
     personnel.ajouterEmploye(producteur)
     personnel.ajouterEmploye(manutentionnaire)
@@ -17,5 +17,12 @@ static void main(String[] args) {
     personnel.ajouterEmploye(manutentionnaireRisk)
     personnel.each { println(it.afficheSalaire()) };
 
+    def calculerSalaireMoyen(employes) {
+        def salaires = employes.collect { it.calculerSalaire() }
+        return salaires.sum() / salaires.size()
 
+
+    }
+
+    }
 }
