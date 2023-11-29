@@ -8,14 +8,16 @@ static void main(String[] args) {
     def manutentionnaireRisk = new ManutentionnaireRisk("Thierno", "Ca", 30, "2001", 45); // nb heures
 
 
-     def personnel = new Personnel();
-  personnel.ajouterEmploye(vendeur)
+    def personnel = new Personnel();
+    personnel.ajouterEmploye(vendeur)
     personnel.ajouterEmploye(representant)
     personnel.ajouterEmploye(producteur)
     personnel.ajouterEmploye(manutentionnaire)
     personnel.ajouterEmploye(producteurRisque)
     personnel.ajouterEmploye(manutentionnaireRisk)
-    personnel.each { println(it.afficheSalaire()) };
+    personnel.afficheSalaire()
 
+    println("le salaire moyen est: "+ personnel.salaireMoyen())
+    println(personnel.employeSalInf3000())
 
 }

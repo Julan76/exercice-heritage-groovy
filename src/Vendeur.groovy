@@ -1,6 +1,6 @@
 class Vendeur extends Employe {
-    public static final int PRIME_VENDEUR = 400
-    public static final int POURCENTAGE_VENDEUR = 20
+    //public static final int PRIME_VENDEUR = 400
+    //public static final int POURCENTAGE_VENDEUR = 20
     int chiffreAffaire
 
     Vendeur(String nom, String prenom, int age, String dateEntree, int chiffreAffaire) {
@@ -10,7 +10,7 @@ class Vendeur extends Employe {
 
     @Override
     int calculerSalaire() {
-        return (POURCENTAGE_VENDEUR * chiffreAffaire)/100+ PRIME_VENDEUR
+        return (Constantes.POURCENTAGE_VENDEUR * chiffreAffaire)/100+ Constantes.PRIME_VENDEUR
     }
 
 }
